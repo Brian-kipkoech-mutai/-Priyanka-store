@@ -75,7 +75,7 @@ function Categories() {
           whileTap={tapVariant}
         >
           <NavLink
-             to={'/search'}
+            to={"/search?gender=Men"}
             className={({ isActive }) =>
               isActive ? "text-gray-800" : "text-muted-foreground"
             }
@@ -91,6 +91,7 @@ function Categories() {
           whileTap={tapVariant}
         >
           <NavLink
+            to={"/search?gender=Women"}
             className={({ isActive }) =>
               isActive ? "text-gray-800" : "text-muted-foreground"
             }
@@ -103,13 +104,7 @@ function Categories() {
           whileHover={hoverVariant}
           whileTap={tapVariant}
         >
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "text-gray-800" : "text-muted-foreground"
-            }
-          >
-            Children
-          </NavLink>
+           
         </motion.div>
       </motion.section>
     </motion.section>
